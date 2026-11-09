@@ -1,0 +1,24 @@
+SCL length (wall thickness used) t = 50.0000 mm
+Frame: local frame (n along SCL, t hoop, h meridional)
+
+Component                 nn         tt         hh         nt         th         hn
+Membrane              -8.005     40.005     16.000      0.000      0.000      0.000
+Bending (inside)       0.000      9.682      0.000      0.000      0.000      0.000
+Total inside         -20.000     52.000     16.000      0.000      0.000      0.000
+M+B inside            -8.005     49.688     16.000      0.000      0.000      0.000
+Peak inside          -11.995      2.312      0.000      0.000      0.000      0.000
+Total outside          0.000     32.000     16.000      0.000      0.000      0.000
+M+B outside           -8.005     30.323     16.000      0.000      0.000      0.000
+Peak outside           8.005      1.677      0.000      0.000      0.000      0.000
+
+Equivalent stresses (MPa)       von Mises     Tresca(SI)
+  Membrane                          41.578       48.011
+  Membrane+Bending (inside )        50.197       57.693
+  Membrane+Bending (outside)        33.544       38.328
+  Total            (inside )        62.354       72.000
+  Total            (outside)        27.713       32.000
+
+Check vs ASME VIII-2 5.2.2.4 elastic limits (von Mises; confirm edition):
+  PL      =    41.58 <= 1.5S =   207.00  -> PASS  (ratio 0.201)
+  P(L)+Pb =    50.20 <= 1.5S =   207.00  -> PASS  (ratio 0.242)
+  Classification (Pm vs PL vs Q) is YOUR engineering decision, not the script's.

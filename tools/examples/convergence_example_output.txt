@@ -1,0 +1,15 @@
+Mesh table (fine -> coarse):
+         h        value   change vs next finer
+       2.5        111.6                       
+         5          111                -0.54 %
+        10        108.9                -1.89 %
+        20        101.2                -7.07 %
+
+Using three finest meshes: h = 2.5, 5.0, 10.0
+Convergence type: monotonic
+Observed order of convergence p = 1.807  (expect ~1-2 for stresses with parabolic elements; p << 1 suggests a singularity)
+Richardson extrapolated value  = 111.84
+Fine-mesh error estimate       = 0.21 %
+GCI_fine (Fs = 1.25)           = 0.27 %  -> report as 111.6 +/- 0.3
+Asymptotic range ratio         = 1.005  (close to 1.0 = in asymptotic range)
+Target GCI <= 2.0 %       : MET

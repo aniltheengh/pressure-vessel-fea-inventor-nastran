@@ -1,0 +1,27 @@
+{
+  "name": "Sample vessel: 1000 mm ID, 1.5 MPa, SA-516 Gr 70, 100 C",
+  "design_pressure_MPa": 1.5,
+  "inside_diameter_mm": 1000,
+  "corrosion_allowance_mm": 3.0,
+  "allowable_stress_MPa": 138.0,
+  "allowable_stress_test_temp_MPa": 138.0,
+  "joint_efficiency": 1.0,
+  "shell_nominal_thickness_mm": 12.0,
+  "mill_undertolerance_mm": 0.3,
+  "youngs_modulus_MPa": 200000,
+  "poisson": 0.3,
+  "torispherical": {
+    "crown_radius_mm": 1000,
+    "knuckle_radius_mm": 60
+  },
+  "nozzle": {
+    "inside_diameter_mm": 200,
+    "nominal_thickness_mm": 8.0,
+    "undertolerance_mm": 0.0,
+    "allowable_stress_MPa": 138.0,
+    "projection_mm": 150,
+    "pad_od_mm": 0,
+    "pad_thickness_mm": 0
+  },
+  "unsupported_length_mm": 3000
+}

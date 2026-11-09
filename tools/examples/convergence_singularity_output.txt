@@ -1,0 +1,18 @@
+Mesh table (fine -> coarse):
+         h        value   change vs next finer
+         1          379                       
+         2          296               -21.90 %
+         4          231               -21.96 %
+         8          180               -22.08 %
+
+Using three finest meshes: h = 1.0, 2.0, 4.0
+Convergence type: monotonic
+Observed order of convergence p = 0.353  (expect ~1-2 for stresses with parabolic elements; p << 1 suggests a singularity)
+Richardson extrapolated value  = 678.72
+Fine-mesh error estimate       = 44.16 %
+GCI_fine (Fs = 1.25)           = 98.85 %  -> report as 379 +/- 375
+Asymptotic range ratio         = 0.785  (close to 1.0 = in asymptotic range)
+Target GCI <= 2.0 %       : NOT MET
+DIAGNOSIS: p < 0.5 -> value is probably at a SINGULARITY (sharp corner, point load,
+  point/edge constraint). Refining will never converge it. Move the SCL away, model the
+  real fillet/weld radius, or evaluate it as a peak (fatigue) quantity only.
