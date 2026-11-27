@@ -1,5 +1,16 @@
 # Pressure Vessel FEA with Autodesk Inventor Nastran — A Practical Engineering Guide
 
+## ⭐ Modal Analysis in Inventor Nastran (start here)
+
+**[Modal Analysis in Inventor Nastran: Setup, Mesh, Results](docs/modal-analysis-inventor-nastran.md)**
+
+- **Setup:** create a Modal (Normal Modes) analysis, solver Nastran (SOL 103), 10 modes, Lanczos, Coupled mass — density is required
+- **Mesh settings:** parabolic (2nd-order, 10-node) tets; element size about 1/10 to 1/20 of the part's smallest main dimension
+- **Mesh check:** Mesh Table plus quality (aspect ratio, Jacobian, skew); refine until the 1st frequency changes by less than 2–5%
+- **Results:** mode shapes (normalized), Modal Frequency Table or `.f06` REAL EIGENVALUES, and 80–90% effective mass in X, Y and Z
+
+---
+
 From drawing to a checked, code-based FEA report: design basis, hand calcs, Inventor Nastran setup, meshing and convergence, stress linearization and classification (ASME VIII-2 Part 5), beyond-static analyses, V&V, solver errors and fixes, a report template, an 80-item checker's checklist, and tested Python tools.
 
 > **Status:** study and working guide written engineer-to-engineer. It is **not** a code document. Clause numbers, factors and allowables are quoted from the sources in [docs/12-references.md](docs/12-references.md) — **always confirm against the code edition named in your contract**, and follow your company's procedures. FEA alone does not certify a vessel or replace a required pressure test.
