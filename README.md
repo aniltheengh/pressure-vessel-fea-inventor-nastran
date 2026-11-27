@@ -27,6 +27,7 @@ From drawing to a checked, code-based FEA report: design basis, hand calcs, Inve
 | 10 | [Review checklist](docs/10-review-checklist.md) | 80-item checker's checklist + comment sheet |
 | 11 | [Glossary](docs/11-glossary.md) | Terms, with 日本語 |
 | 12 | [References](docs/12-references.md) | Codes, WRC, Autodesk docs/KB, industry articles, books, papers |
+| — | [Modal analysis in Inventor Nastran](docs/modal-analysis-inventor-nastran.md) | Modal (normal modes) setup: analysis settings, materials, constraints, mesh settings and checks, run, result output, cantilever frequency check |
 | — | [tools/](tools/README.md) | `pv_handcalc.py`, `linearize.py`, `convergence.py`, `test_tools.py`, examples |
 
 ---
@@ -129,6 +130,7 @@ docs/
   10-review-checklist.md
   11-glossary.md
   12-references.md
+  modal-analysis-inventor-nastran.md
 tools/
   README.md  pv_handcalc.py  linearize.py  convergence.py  test_tools.py
   examples/  (inputs, CSVs, saved outputs)
